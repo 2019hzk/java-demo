@@ -9,6 +9,7 @@ pipeline {
                 withDockerContainer('maven:3.8-openjdk-8-slim') {
                     // some block
                     sh 'mvn -v '
+                    sh 'ls -al'
                 }
             }
         }
